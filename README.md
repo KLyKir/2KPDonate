@@ -1,2 +1,2 @@
 # 2KPDonate
-Donation platform
+Donation platform 2.0
