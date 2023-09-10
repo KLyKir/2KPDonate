@@ -1,0 +1,27 @@
+{
+  "name": "2kpdonate",
+  "version": "1.0.0",
+  "description": "Donation Platform",
+  "main": "App.jsx",
+  "dependencies": {
+    "react-dom": "^18.2.0",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "Test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KLyKir/2KPDonate.git"
+  },
+  "keywords": [
+    "Donation"
+  ],
+  "author": "Klyaus Petrenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KLyKir/2KPDonate/issues"
+  },
+  "homepage": "https://github.com/KLyKir/2KPDonate#readme"
+}
