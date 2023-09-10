@@ -1,10 +1,10 @@
 import React from "react";
-import "";
+import "./Header.css";
 
 export const Header = () => {
-    return (
-        <header className="header">
-            <span className="header_logo">logo</span>
-        </header>
-    )
-}
+  return (
+    <header className="header">
+      <span className="header_logo">logo</span>
+    </header>
+  );
+};
