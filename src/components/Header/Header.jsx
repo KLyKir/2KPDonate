@@ -3,25 +3,59 @@ import React, { useState } from "react";
 import "./Header.css";
 
 export const Header = () => {
-  const [isOpen, setOpen] = useState();
+  const [isOpen, setOpen] = useState(false);
+  const toggleMenu = () => {
+    setOpen(!isOpen);
+  };
   return (
-      <div className="header">
-      <span className="header_logo"><b>2KPDonate</b></span>
-      <nav className={`header_nav ${isOpen ? "active": ""} `}>
-        <ul className="header_nav_list">
-          <li className="header_nav_item">Цільові збори</li>
-          <li className="header_nav_item">Зробити внесок</li>
-          <li className="header_nav_item">Про нас</li>
-          <li className="header_nav_item">Сервіси</li>
-          <div className="header_language">
-            {/* <button className="header_button_language"><Icon /></button> */}
-            <button className="header_button_language">мова</button>
+    <>
+      <nav className="header">
+        <div
+          className={`header_menu_button ${isOpen ? "rotated" : ""}`}
+          onClick={toggleMenu}
+        >
+          ☰
+        </div>
+        <div className="header_logo">2KPDonate</div>
+        <nav className="header_nav">
+          <div className="header_nav_list">
+            <div className="header_nav_item">Цільові збори</div>
+            <div className="header_nav_item">Зробити внесок</div>
+            <div className="header_nav_item">Про нас</div>
+            <div className="header_nav_item">Сервіси</div>
+            <div className="header_language">
+              {/* <button className="header_button_language"><Icon /></button> */}
+              <div className="header_button_language">мова</div>
+            </div>
           </div>
-        </ul>
+        </nav>
+        <a className="header_button_help">
+          <div className="menuButt">Допомоги</div>
+        </a>
+        <a className="header_button_profile">
+          <div className="menuButt">Профіль</div>
+        </a>
       </nav>
-      <button className="header_button_help">Допомоги</button>
-      <button className="header_button_profile">Профіль</button>
-      <button className="header_menu_button" onClick={() => setOpen(!isOpen)}></button>
-    </div>
+      <nav
+        className={`phoneMenu ${isOpen ? "open" : ""}`}
+        style={{ left: isOpen ? "0%" : "100%" }}
+      >
+        <a className="menuBarA">
+          <div className="menuBar">Цільові збори</div>
+        </a>
+        <a className="menuBarA">
+          <div className="menuBar">Зробити внесок</div>
+        </a>
+        <a className="menuWBarA">
+          <div className="menuBar">Про нас</div>
+        </a>
+        <a className="menuBarA">
+          <div className="menuBar">Сервіси</div>
+        </a>
+        <a className="menuBarA">
+          <div className="header_button_language">мова</div>
+        </a>
+      </nav>
+    </>
   );
 };
