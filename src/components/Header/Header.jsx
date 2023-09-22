@@ -25,7 +25,10 @@ export const Header = () => {
             <div className="header_nav_item">Сервіси</div>
             <div className="header_language">
               {/* <button className="header_button_language"><Icon /></button> */}
-              <div className="header_button_language">мова</div>
+              <div className="header_button_language">
+                {/* мова */}
+                <img className="language" src = "../language-icon1.png"/>
+              </div>
             </div>
           </div>
         </nav>
@@ -53,7 +56,10 @@ export const Header = () => {
           <div className="menuBar">Сервіси</div>
         </a>
         <a className="menuBarA">
-          <div className="header_button_language">мова</div>
+          <div className="header_button_language">
+            {/* мова */}
+            <img className="language" src = "../language-icon1.png"/>
+          </div>
         </a>
       </nav>
     </>

@@ -207,6 +207,7 @@
 }
 
 .header_logo {
+    margin-left: 5px;
     font-size: 30px;
     color: black;
 }
@@ -229,17 +230,26 @@
     justify-content: center;
 }
 
-/* .header_button_language {
-    
-} */
+.header_button_language {
+    width: 100%;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language{
+    width: 50px;
+}
 
 .header_button_help {
-    margin-left: 40px;
+    margin-left: 8px;
     width: 120px;
     height: 40px;
-    font-size: 18px;
+    font-size: 16px;
+    padding: 10px;
     border-radius: 30px;
-    border: none;
+    border: solid 3px rgb(255, 202, 9);
     background-color: rgb(255, 202, 9);
     transition: all 200ms ease;
     display: flex;
@@ -247,26 +257,42 @@
 }
 
 .header_button_help:hover {
-    margin-left: 40px;
+    margin-left: 8px;
     width: 120px;
     height: 40px;
-    font-size: 18px;
-    border-radius: 30px;
-    border: solid 3px rgb(255, 202, 9);
-    background-color: white
-}
-
-.header_button_profile {
-    margin-left: 40px;
-    width: 120px;
-    height: 40px;
-    font-size: 18px;
+    font-size: 16px;
+    padding: 10px;
     border-radius: 30px;
     border: solid 3px rgb(255, 202, 9);
     background-color: white;
-    transition: all 200ms ease;
+}
+
+.header_button_profile {
+    margin-left: 8px;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 30px;
+    border: solid 3px rgb(255, 202, 9);
+    background-color: white;
+    transition: all 500ms ease;
     display: flex;
     align-items: center;
+} 
+
+.header_button_profile:hover {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 30px;
+    border: solid 3px rgb(255, 202, 9);
+    background-color: rgb(255, 202, 9);
+    /* transition: all 200ms ease; */
 }
 
 .phoneMenu{
@@ -277,9 +303,11 @@
 	height: 90%;
 	background-color: #F5F5F5;
 	flex-wrap: wrap;
+    padding-top: 10px;
+    gap: 10px;
 	flex-direction: column;
 	flex-shrink: 0;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 	display: flex;
 	z-index: 2;
@@ -298,16 +326,6 @@
 	width: 100%;
 	text-align: center;
 }
-.header_button_profile:hover {
-    margin-left: 40px;
-    width: 120px;
-    height: 40px;
-    font-size: 18px;
-    border-radius: 30px;
-    border: none;
-    background-color: rgb(255, 202, 9);
-    transition: all 200ms ease;
-}
 
 .menuButt{
 	width: 100%;
@@ -316,7 +334,7 @@
 
 .header_menu_button {
     display: block;
-    margin-left: auto;
+    margin-left: -80px;
     width: 48px;
     height: 24px;
 }
@@ -328,6 +346,12 @@
 	
 }
 @media (orientation: landscape) and (min-width: 1200px){ 
+    .header_logo {
+        margin-left: 10px;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+    }
+
     .header_nav{
         display: flex;
         margin-left: auto;
